@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIS FLOREEES - Tecnología a tu alcance</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  background: linear-gradient(90deg, #00f2fe, #4facfe, #43e97b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #00f2fe; }
+  to { text-shadow: 0 0 30px #43e97b; }
+}
+
+header p {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* BOTÓN */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 35px;
+  background: linear-gradient(90deg, #43e97b, #38f9d7);
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 40px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #38f9d7;
+}
+
+/* PRODUCTOS */
+.products {
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  background: rgba(255,255,255,0.15);
+}
+
+.card img {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #43e97b;
+  margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0,0,0,0.4);
+  margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>MIS FLOREEES</h1>
+  <p>🌐 La tecnología a tu alcance</p>
+  <a href="#productos" class="btn">Ver productos</a>
+</header>
+
+<section id="productos" class="products">
+
+  <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/2920/2920218.png">
+    <h3>Audífonos Premium</h3>
+    <p>Sonido potente y diseño moderno</p>
+    <div class="price">$399 MXN</div>
+    <a href="#" class="btn">Comprar</a>
+  </div>
+
+  <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/1041/1041884.png">
+    <h3>Cables USB</h3>
+    <p>Carga rápida y máxima duración</p>
+    <div class="price">$99 MXN</div>
+    <a href="#" class="btn">Comprar</a>
+  </div>
+
+  <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/3659/3659899.png">
+    <h3>Cargadores</h3>
+    <p>Seguridad y potencia garantizada</p>
+    <div class="price">$199 MXN</div>
+    <a href="#" class="btn">Comprar</a>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 MIS FLOREEES | Tecnología moderna para todos
+</footer>
+
+</body>
+</html>
